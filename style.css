@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.header {
+    /* 100 view height
+    full height of the screen */
+    min-height: 100vh;
+    width: 100%;
+    /* linear gradient produces a progessive change
+    in background color between two or
+    more colors along a straight line */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/banner.png);
+    /* use the full size of the image */
+    background-size: cover;
+    /* center the image */
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    /* crossAxisAlignment */
+    align-items: center;
+    /* mainAxisAlignment */
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    /* top and bottom is 10px
+    left and right is 30px */
+    margin: 10px 30px;
+    /* border: 1px solid black; */
+}
+
+.nav-links li a {
+    /* remove the underline */
+    text-decoration: none;
+    color: #fff;
+}
+
+.register-btn {
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.header h1 {
+    /* 4% of viewport width */
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}
+
+.search-bar {
+    background: #fff;
+    width: 70%;
+    /* top & bottom is 30px
+    left & right is auto 
+    so as to center the search-box */
+    margin: 30px auto;
+    /* top right bottom left */
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    /* flex items can span unto multiple lines in the
+    absence of space. */
+    flex-wrap: wrap;
+}
+
+.search-bar form input {
+    /* each form should on its own line
+    width the div element */
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-bar form button {
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img {
+    width: 15px;
+    margin-top: 7px;
+}
+
+.location-input {
+    /* so as to use all the available space
+    in the flex parent */
+    flex: 1;
+}
+
+.search-bar form label {
+    font-weight: 600;
+}
+
+
+/* exclusives */
+
+.sub-title {
+    /* top: 50px
+    left&right: 0
+    bottom: 20px */
+    margin: 50px 0 20px;
+    /* 2.2% of viewport's width */
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives {
+    display: grid;
+    /* minimum image width of 200px */
+    /* 1fr stands for 25% of the available
+    space. */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* margin gap between the images. */
+    grid-gap: 30px;
+}
+
+.exclusives div img {
+    /* 100% of the available space. */
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclusives div {
+    /* positioned relative to its
+    original position in the document */
+    position: relative;
+}
+
+.exclusives div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Trending places */
+
+.trending {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending h3 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+/* call to action */
+
+.cta {
+    /* 80px for top & bottom
+    0 for left and right. */
+    margin: 80px 0;
+    /* learning never ends */
+    background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+.cta h3 {
+    /* 4% view width */
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn {
+    background: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/* Travellers stories */
+
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories div {
+    position: relative;
+    text-align: center;
+}
+
+.stories div p {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 26px;
+}
+
+.start-btn {
+    text-decoration: none;
+    background: #ff5361;
+    color: #fff;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.about-msg {
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+
+/* footer css properties */
+
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    /* for increasing the size of the icon */
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p {
+    padding-bottom: 15px;
+}
