@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB - Faisal Lawan Muhammad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav id="navBar" class="navbar-white">
+        <a href="index.html">
+            <img src="images/logo-red.png" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Popular places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="listing.html">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                    <span>245 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Abuja Hills, Abuja, United States of Nigeria</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1">
+                <img src="images/house-1.png" alt="">
+            </div>
+            <div>
+                <img src="images/house-2.png" alt="">
+            </div>
+            <div>
+                <img src="images/house-3.png" alt="">
+            </div>
+            <div>
+                <img src="images/house-4.png" alt="">
+            </div>
+            <div>
+                <img src="images/house-5.png" alt="">
+            </div>
+        </div>
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Faisal</h2>
+            <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+            <h4>₦ 5000 / day</h4>
+        </div>
+        <hr class="line">
+        <form class="check-form">
+
+            <div>
+                <label>Check-in</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+
+            <div>
+                <label>Check-out</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+
+            <div class="guest-field">
+                <label>Guest</label>
+                <input type="text" placeholder="2 guest">
+            </div>
+            <button type="submit">Check Availability</button>
+
+        </form>
+
+        <ul class="details-list">
+            <li><i class="fa fa-home" aria-hidden="true"></i>Entire Home
+                <span>You will have the entire flat for yourself.</span>
+            </li>
+            <li><i class="fa-solid fa-paintbrush"></i>Enhanced Clean
+                <span>This host has committed to staybnb's cleaning process.</span>
+            </li>
+            <li><i class="fa fa-map-marker-alt" aria-hidden="true"></i>Great Location
+                <span>90% of recent guests gave the location a 5 star rating.</span>
+            </li>
+            <li><i class="fa-solid fa-heart"></i>Great Check-in Experience
+                <span>100% of recent guests gave the check-in process a 5-star rating.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up
+            one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+        </p>
+
+        <hr class="line">
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.1266178965325!2d10.508025580148313!3d9.755341016467236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10557f36b86183bf%3A0x27839b35557a1821!2sYankari%20Game%20Reserve!5e0!3m2!1sen!2ssa!4v1691951578448!5m2!1sen!2ssa"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>Yankari Game Reserve, Bauchi, Nigeria</b>
+            <p>It's like a home away from home.</p>
+        </div>
+        <hr class="line">
+        <div class="host">
+            <img src="images/host.png">
+            <div>
+                <h2>Hosted by Faisal</h2>
+                <p><span>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                </span>&nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min</p>
+            </div>
+
+        </div>
+        <a href="#" class="contact-host">Contact Host</a>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <hr/>
+            <p>
+                Copyright &copy 2023, Faisal Lawan Muhammad.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById('navBar');
+
+        function togglebtn() {
+            navBar.classList.toggle('hidemenu');
+        }
+    </script>
+</body>
+
+</html>
